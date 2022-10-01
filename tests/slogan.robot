@@ -1,14 +1,17 @@
 *** Settings ***
-Documentation          Home page
-Resource               ../resources/main.resource
+Documentation   Home page
+Resource    ../resources/main.resource
 
-Test Setup        Start Test
-Test Teardown     Finish Test
+Test Setup      Start Test
+Test Teardown   Finish Test
 
 *** Variables ***
-${slogan}           Conectando colecionadores de figurinhas da copa.
+${slogan}       Conectando colecionadores de figurinhas da copa.
 
 *** Test Cases ***
 Deve validar o slogan da home page
+    [Tags]                  slogan
     Go to Login Page
-    Get Text        css=.logo-container h2    equal    ${slogan}
+    Wait For Elements State
+    ...                     css=.logo-container h2 >> text=${slogan}
+    ...                     visible
