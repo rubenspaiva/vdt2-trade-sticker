@@ -59,9 +59,15 @@ Execute os comandos abaixo para instalar das dependências do projeto e execuç�
 
 ```sh
 pip install robot framework
+pip install robotframework-browser
+rfbrowser init
 cd trade-sticker
 robot -d ./logs/ tests/ 
 ```
+
+## 📝 Sugestões de Melhorias
+
+Segue documento no drive mostrando algumas sugestões de melhorias: [Documento de Melhorias](https://docs.google.com/document/d/1En2Gn2OC3t3Em0N2W7ztmQnsxbUjddfir8wAjmeFwps/edit#)
 
 ## 📝 License
 
