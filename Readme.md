@@ -24,11 +24,11 @@
 - [X] Não deve logar usando email válido e senha inválida [tag: inv_pass]
 - [X] Deve logar usando email e senha válidos [tag: login_success]
 
-| campos | descrição                             | tipo     | obrigatório |
-| ------ | :------------------------------------ | -------- | ----------- |
-| email   | email do usuário                     | texto    | sim         |
-| senha   | senha do usuário                     | texto    | sim         |
-| checkbox  | checkbox lembrar dados             | checkbox | não         |
+| campos  | descrição                             | tipo     | obrigatório |
+| ------  | :------------------------------------ | -------- | ----------- |
+| email   | email do usuário                      | texto    | sim         |
+| senha   | senha do usuário                      | texto    | sim         |
+| checkbox| checkbox lembrar dados                | checkbox | não         |
 
 ### Busca de Figurinhas (search_sticker.robot)
 
@@ -58,7 +58,7 @@
 Execute os comandos abaixo para instalar das dependências do projeto e execução dos testes:
 
 ```sh
-pip instal robot framework
+pip install robot framework
 cd trade-sticker
 robot -d ./logs/ tests/ 
 ```
@@ -69,4 +69,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Layout feito com 💜&nbsp;por [Fernando Papito](https://www.linkedin.com/in/papitoio/) 👋 &nbsp;e adaptado por [Rubens Paiva](https://www.linkedin.com/in/papitoio/)
+Layout feito com 💜&nbsp;por [Fernando Papito](https://www.linkedin.com/in/papitoio/) 👋&nbsp;e adaptado por [Rubens Paiva](https://www.linkedin.com/in/papitoio/)
