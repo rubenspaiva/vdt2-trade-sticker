@@ -12,6 +12,7 @@ ${slogan}       Conectando colecionadores de figurinhas da copa.
 Deve validar o slogan da home page
     [Tags]                  slogan
     Go to Login Page
+    
     Wait For Elements State
     ...                     css=.logo-container h2 >> text=${slogan}
     ...                     visible

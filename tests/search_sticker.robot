@@ -16,7 +16,8 @@ Deve retornar os usuários que possuem uma figurinha específica
     [Tags]                      sticker
     Do Login
     ${sticker_name}             Set Variable
-    ...                         pé
+    ...                         legend
+
     Search Sticker              ${sticker_name}
     All Users And Sticker
 

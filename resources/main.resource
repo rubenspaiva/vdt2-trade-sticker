@@ -7,12 +7,14 @@ Resource    pages/dash.resource
 *** Keywords ***
 Do Login
     Go to Login Page
-    Submit Credentials  papito@gmail.com    vaibrasil
+    Submit Credentials      papito@gmail.com    vaibrasil
     User Logged In
 
 Start Test
-    New Browser         headless=False
+    Set Browser Timeout     10s
+    New Browser             headless=False
+
 
 Finish Test
-    Sleep               1
+    Sleep                   1
     Take Screenshot

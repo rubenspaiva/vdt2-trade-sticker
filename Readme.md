@@ -3,7 +3,7 @@
 # Viver de Teste 2.ª Temporada
 
 <h1 align="left">
-    <img src=".github/logo-stiker.svg" width="250px">
+    <img src="https://github.com/rubenspaiva/vdt-season1-marvel-api/blob/main/.github/logo-stiker.svg" width="250px">
 </h1>
 
 
@@ -17,18 +17,18 @@
 
 ### Login (login.robot)
 
-- [X] Deve logar usando email e senha válidos [tag: login_success]
+- [X] Não deve logar sem inserir email e senha [tag: no_email_pass]
+- [X] Não deve logar usando somente email [tag: no_pass]
+- [X] Não deve logar usando somente senha [tag: no_email]
 - [X] Não deve logar usando email inválido e senha válida [tag: inv_email]
 - [X] Não deve logar usando email válido e senha inválida [tag: inv_pass]
-- [X] Não deve logar usando somente senha válida [tag: no_email]
-- [X] Não deve logar usando somente email válido [tag: no_pass]
-- [X] Não deve logar sem inserir email e senha [tag: no_email_pass]
+- [X] Deve logar usando email e senha válidos [tag: login_success]
 
 | campos | descrição                             | tipo     | obrigatório |
 | ------ | :------------------------------------ | -------- | ----------- |
 | email   | email do usuário                     | texto    | sim         |
 | senha   | senha do usuário                     | texto    | sim         |
-| checkbox  | Checkbox Lembrar Dados             | checkbox | não         |
+| checkbox  | checkbox lembrar dados             | checkbox | não         |
 
 ### Busca de Figurinhas (search_sticker.robot)
 
@@ -38,11 +38,12 @@
 
 | campos  | descrição                             | tipo     | obrigatório |
 | ------  | :------------------------------------ | -------- | ----------- |
-| textbox | Caixa de pesquisa                     | texto    | não         |
+| textbox | caixa de pesquisa                     | texto    | não         |
 
 ### Negociação de Figurinhas (trade_sticker.robot)
 
-- [X] Deve poder negociar uma firurinha específica com um usuário [tag: trade_sticker]
+- [X] Deve poder negociar com um usuário [tag: trade_user]
+- [X] Deve poder negociar uma figurinha específica com um usuário [tag: trade_sticker]
 
 ## 🚀 Tecnologias
 
@@ -51,6 +52,7 @@
 ## 👨🏻‍💻 Como executar o projeto
 
 [Node.js](https://nodejs.org/) v16 ou superior para executar.
+
 [Python](https://www.python.org/downloads/) 3.1.7 ou superior para executar.
 
 Execute os comandos abaixo para instalar das dependências do projeto e execução dos testes:
@@ -67,4 +69,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feito com 💜 &nbsp;por Fernando Papito 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/papitoio/)
+Layout feito com 💜&nbsp;por [Fernando Papito](https://www.linkedin.com/in/papitoio/) 👋 &nbsp;e adaptado por [Rubens Paiva](https://www.linkedin.com/in/papitoio/)
