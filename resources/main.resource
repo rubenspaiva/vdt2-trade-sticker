@@ -8,6 +8,7 @@ Resource    pages/dash.resource
 Do Login
     Go to Login Page
     Submit Credentials      papito@gmail.com    vaibrasil
+    Click Login Button
     User Logged In
 
 Start Test

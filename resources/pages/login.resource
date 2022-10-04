@@ -14,16 +14,6 @@ Go to Login Page
 #Abre a página do site https://trade-sticker-dev.vercel.app
     New Page                   https://trade-sticker-dev.vercel.app
 
-Submit Email
-#Insere ${email} na caixa de email
-    [Arguments]                ${email}
-    Fill Text                  ${email_input}       ${email}
-
-Submit Password
-#Insere ${password} na caixa de password
-    [Arguments]                ${password}
-    Fill Text                  ${password_input}    ${password}
-
 Click Login Button  
 #Insere ${password} na caixa de password                    
     Click                      ${login_button} 
@@ -31,9 +21,8 @@ Click Login Button
 Submit Credentials
 #Insere ${email} e ${password} nas suas caixas e clica no botão de login
     [Arguments]                ${email}             ${password}                   
-    Submit Email               ${email}
-    Submit Password            ${password}
-    Click Login Button 
+    Fill Text                  ${email_input}       ${email}
+    Fill Text                  ${password_input}    ${password}
 
 Toast Message Should Be
 #Verifica a mensagem do toast que aparece
